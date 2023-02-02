@@ -11,14 +11,22 @@ var characterTraits = {
  return characterTraits
 }
 
-function saveReview() {
-
+function saveReview(string,reviews) 
+{
+if (reviews.includes(string) !== true ) { 
+  reviews.push(string) 
+  }  
 }
+
+function calculatePageCount() {
+  bookTitle.length
+}
+
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
-  // calculatePageCount,
+  calculatePageCount,
   // writeBook,
   // editBook
 }
